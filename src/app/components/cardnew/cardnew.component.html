@@ -1,0 +1,23 @@
+<p>cardnew works!</p>
+<div class="d-flex">
+    <div *ngFor="let data of cardDis" class="card">
+        <div class="img">
+            <img src="{{data.imgUrl}}" alt="">
+        </div>
+        <h3>{{data.heading}}</h3>
+        <div> 
+            <p>{{data.kg}}KG</p>
+            <p>{{data.rs}}RS</p>
+        </div> 
+        <div class="add d-flex">
+            <button (click)="fnp(data)">+</button>
+            <p>{{data.Qt * data.kg}}KG</p>
+            <button (click)="fnm(data)">-</button>
+            <p>{{data.Qt * data.rs}}RS</p>
+        </div>
+        <button (click)="AddCard(data)" class="addCard">AddCard</button>
+
+        
+    </div>
+
+</div>

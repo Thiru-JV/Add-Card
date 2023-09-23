@@ -1,0 +1,41 @@
+.d-flex{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 8px;
+    flex-wrap: wrap;
+}
+
+.img img{
+    width: 100%;
+    height: 200px;
+}
+.card{
+    width: 200px;
+    padding: 5px;
+    background-color:palegreen;
+    margin-bottom: 10px;
+}
+.add p{
+
+    margin: 0;
+}
+.add{
+    margin-bottom: 10px;
+}
+.addCard{
+    width: 100%;
+    background-color: rgb(247, 239, 150);
+    padding: 8px;
+    color: #000000;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.addCard:hover{
+    background-color: rgb(0, 0, 255);
+    color: #fff;
+
+}
